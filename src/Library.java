@@ -21,7 +21,7 @@ public  class Library implements Serializable {
     user =new ArrayList<>();
 
 }
-     public void  addabook(Book book)    //this method take bbokk object as a parameter
+     public void  addabook(Book book)    //this method take book object as a parameter
     {
       books.add(book);
     }

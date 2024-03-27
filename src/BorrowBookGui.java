@@ -29,7 +29,7 @@ public class BorrowBookGui {
         frame.setLayout(new GridLayout(3, 1));
         frame.setSize(400, 200);
          scrollPane.setPreferredSize(new Dimension(400, 100)); // Set preferred size for the scroll pane
-          // Add the scroll pane
+
         frame.add(enterBookTitleLabel);
         frame.add(bookTitleTextField);
         frame.add(borrowButton);
@@ -48,9 +48,9 @@ public class BorrowBookGui {
              System.out.println("Book Title: " + book.getTitle());
              bookListArea.append(book.getTitle() + "\n");
          }
-         //System.out.println("Entered Title: " + title_);
+
          updateBookList();
-         //frame.add(bookListArea);
+
          borrowButton.addActionListener(new ActionListener() {
              @Override
              public void actionPerformed(ActionEvent e) {

@@ -76,7 +76,7 @@ ReturnBookGui returnBookGui;
                 // Logic for exit button
                 System.out.println("Exit button clicked");
 
-                // Add your code here
+
                 create_frame.dispose();
             }
         });

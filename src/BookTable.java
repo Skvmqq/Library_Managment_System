@@ -54,7 +54,7 @@ public class BookTable {
         panel.setLayout(new FlowLayout());
         panel.add(Avilable_books);
         panel.add(Exit);
-       // panel.add(book_table);
+
 
         book_frame.setLayout(new BorderLayout());
         book_frame.add(panel, BorderLayout.NORTH);
@@ -68,9 +68,9 @@ public class BookTable {
             }
         });
         book_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-       // book_frame.pack();
+
         book_frame.setSize(800,800);
-        //book_frame.add(book_table);
+
         book_frame.setVisible(true);
 
     }

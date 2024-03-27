@@ -87,7 +87,7 @@ public class Login {
             public void actionPerformed(ActionEvent e) {
                 // Logic for librarian login
                 System.out.println("Librarian login clicked");
-                // Add your code here
+
                 String enteredUserid = Librarian_nameTF.getText();
                 String enteredPass = new String(Librarian_passwordTF.getPassword());
                 Librarian foundLibrarain = library.findLibrarianByUsernameAndPassword(enteredUserid, enteredPass);
@@ -99,10 +99,10 @@ public class Login {
                     librarianHome.setCreate_frame_librarian();
                     librarianHome.create_frame_librarian.setVisible(true);
 
-                    // Add your code here for successful librarian login
+
                 } else {
                     System.out.println("Librarian login failed");
-                    // Add your code here for failed librarian login
+
                 }
             }
 
@@ -134,27 +134,15 @@ public class Login {
                     // Refresh the main frame
                     frame.revalidate();
                     frame.repaint();
-                    // Add your code here for successful student login
+
                 } else {
                     loginStatusLabel.setText("Student login unsuccessful");
 
-                    // Add your code here for failed student login
+
                 }
-                    //studentHomeFrame.guibuild();
-                    //studentHomeFrame.create_frame.setVisible(true);
-                    /*frame.add(studentHomeFrame.create_frame);
 
-                    frame.add(studentHomeFrame.Borrow_books);
-                    frame.add(studentHomeFrame.Return_books);
-                    frame.add(studentHomeFrame.Exit);*/
-
-                    // Refresh the main frame
-                    //frame.revalidate();
-                    //frame.repaint();
-
-                    // Add your code here for failed student login
                 }
-                // Add your code here
+
 
         });
         Student_sign_up.addActionListener(new ActionListener() {
@@ -180,7 +168,7 @@ public class Login {
                     System.err.println("Error writing to file during serialization: " + i.getMessage());
                 }
 
-                // Add your code here
+
                 System.exit(0);
             }
         });

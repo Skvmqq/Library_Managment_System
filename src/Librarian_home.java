@@ -72,7 +72,7 @@ public class Librarian_home {
                     // Logic for exit button
                     System.out.println("Exit button clicked");
 
-                    // Add your code here
+
                     create_frame_librarian.dispose();
                 }
             });
